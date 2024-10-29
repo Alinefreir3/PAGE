@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Maria</title>
+    <link rel="icon" href="abc.svg" type="image/x-icon">
+    <style>
+        /* Estilos gerais */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('Group 6.png'); /* caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container central para os botões */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Estilos dos botões */
+        .animated-button {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 12px;
+            color: rgb(70, 70, 70);
+            background-color: #ffffff79;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            width: 200px; /* largura fixa para todos os botões */
+            height: 50px;
+        }
+
+        /* Estilos para as imagens dentro dos botões */
+        .animated-button img {
+            width: 30px; /* tamanho do ícone */
+            height: 30x;
+            margin-right: 15Dpx; /* Espaço entre o ícone e o texto */
+        }
+
+        /* Animação ao passar o mouse por cima */
+        .animated-button:hover {
+            background-color: #5f9ae7;
+            transform: scale(1.1);
+        }
+
+        /* Animação de clique */
+        .animated-button:active {
+            transform: scale(0.9);
+        }
+
+        /* Estilos adicionais para animação ao passar o mouse */
+        .animated-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #ffffff00;
+            transition: left 0.4s;
+        }
+
+        /* Animação de brilho ao passar o mouse */
+        .animated-button:hover::before {
+            left: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <!-- Botão com o ícone do Privacy.com -->
+        <a href="https://alinefreir3.github.io/PV/" style="text-decoration: none;">
+            <button class="animated-button">
+                <img src="pv.svg" alt="Privacy Icon"> Assine meu Privacy (R$89,99)
+            </button>
+        </a>
+        
+        <a href="https://t.me/+p6k1jv22reNjOTBh" style="text-decoration: none;">
+            <button class="animated-button">
+                <img src="tl.svg" alt="Telegram Icon"> Grupo grátis Telegram
+            </button>
+        </a>
+        
+        <a href="https://mpago.la/2pjWthc" style="text-decoration: none;">
+            <button class="animated-button">
+                <img src="tl.svg" alt="Telegram Icon"> Grupo vip Telegram (R$59,99)
+            </button>
+        </a>
+        
+        <a href="https://alinefreir3.github.io/SLC/" style="text-decoration: none;">
+            <button class="animated-button">
+                <img src="1212.svg" alt="Telegram Icon"> Ajude na minha cirurgia
+            </button>
+        </a>
+        
+
+    </div>
+
+</body>
+</html>
